@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Navigation = styled.nav`
     color: white;
     background-color: #333;
-    position: fixed;
+    position: sticky;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -11,8 +11,9 @@ export const Navigation = styled.nav`
     padding: 0.25rem 0 0.5rem 0;
 
     @media (min-width: 769px) {
+        position: fixed;
         padding: 0;
-        align-items: flex-end;
+        align-items: center;
         width: 33%;
         height: 100%;
     }
