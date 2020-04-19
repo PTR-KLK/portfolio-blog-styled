@@ -14,7 +14,15 @@ export const Navigation = styled.nav`
         padding: 0;
         align-items: flex-end;
         width: 33%;
-        height: 100vh;
+        height: 100%;
+    }
+
+    @media (min-width: 1440px) {
+        width: 25%;
+    }
+
+    @media (min-width: 2560px) {
+        width: 33%;
     }
 `;
 

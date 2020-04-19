@@ -5,7 +5,7 @@ function Sidebar() {
   return (
     <Navigation>
       <Header>
-        <Title>PTRKLK</Title>
+        <Title>PTR<br/>KLK</Title>
         <Menu>
           <MenuItem>Blog</MenuItem>
           <MenuItem>Tagi</MenuItem>
