@@ -27,13 +27,19 @@ export const Navigation = styled.nav`
     }
 `;
 
-export const Title = styled.h2`
-    font-size: 2rem;
-    padding: 0;
-    margin: 0;
-    
+export const Title = styled.div`
+
+    & h2 {
+        line-height: 2rem;
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+    }
     @media (min-width: 769px) {
-        font-size: 3rem;
+        & h2 {
+            line-height: 3rem;
+            font-size: 3rem;
+        }
     }
 `;
 
