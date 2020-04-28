@@ -20,3 +20,7 @@ export const Main = styled.main`
         width: 33%;
     }
 `;
+
+export const Hardline = styled.hr`
+    margin: 0 2rem;
+`;

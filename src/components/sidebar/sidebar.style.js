@@ -27,7 +27,24 @@ export const Navigation = styled.nav`
     }
 `;
 
+export const Image = styled.img`
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    display: none;
+
+    @media (min-width: 769px) {
+       display: block;
+    }
+
+`;
+
 export const Title = styled.div`
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     & h2 {
         line-height: 2rem;
