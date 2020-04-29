@@ -13,10 +13,9 @@ function Sidebar() {
           <h2>Title</h2>
         </Title>
         <Menu>
-          <MenuItem>About</MenuItem>
-          <MenuItem>Projects</MenuItem>
-          <MenuItem>Blog</MenuItem>
-          <MenuItem>Tags</MenuItem>
+          <MenuItem to="/">About</MenuItem>
+          <MenuItem to="/projects">Projects</MenuItem>
+          <MenuItem to="/blog">Articles</MenuItem>
         </Menu>
       </Header>
     </Navigation>

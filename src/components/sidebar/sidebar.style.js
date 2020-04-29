@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
 
 export const Navigation = styled.nav`
     color: white;
@@ -81,7 +82,9 @@ export const Menu = styled.ul`
     }
 `;
 
-export const MenuItem = styled.li`
+export const MenuItem = styled(Link)`
+    text-decoration: none;
+    color: white;
     font-size: 1rem;
     padding: 0.125rem;
 

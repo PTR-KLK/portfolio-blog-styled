@@ -1,18 +1,10 @@
 import React from "react";
-import { Main, Hardline } from "./content.style";
-import Article from '../article/article.component';
-import About from '../about/about.component';
+import { Main } from "./content.style";
 
-function Content() {
+function Content(props) {
   return (
     <Main>
-        <About />
-        <Hardline />
-        <Article />
-        <Hardline />
-        <Article />
-        <Hardline />
-        <Article />
+        {props.children}
     </Main>
   );
 }
