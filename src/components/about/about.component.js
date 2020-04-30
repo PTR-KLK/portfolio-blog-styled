@@ -16,9 +16,9 @@ function About() {
         quis, accusamus eveniet!
       </p>
       <Links>
-        <a href="" target="_blank"><FontAwesomeIcon size='4x' icon={faLinkedin} color="#333" /></a>
-        <a href="" target="_blank"><FontAwesomeIcon size='4x' icon={faGithubSquare} color="#333" /></a>
-        <a href="" target="_blank"><FontAwesomeIcon size='4x' icon={faEnvelopeSquare} color="#333" /></a>
+        <a href="https://github.com/PTR-KLK/portfolio-blog-styled" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon size='4x' icon={faLinkedin} color="#333" /></a>
+        <a href="https://github.com/PTR-KLK/portfolio-blog-styled" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon size='4x' icon={faGithubSquare} color="#333" /></a>
+        <a href="https://github.com/PTR-KLK/portfolio-blog-styled" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon size='4x' icon={faEnvelopeSquare} color="#333" /></a>
       </Links>
     </Author>
   );
