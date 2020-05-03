@@ -9,35 +9,33 @@ import {
 import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { about } from "../../resources/about";
 
 function About() {
   return (
     <AboutContainer>
-      <AboutHeader>John Doe</AboutHeader>
-      <AboutSubheader>Some description</AboutSubheader>
+      <AboutHeader>{about.header}</AboutHeader>
+      <AboutSubheader>{about.subheader}</AboutSubheader>
       <AboutParagraph>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-        voluptate tenetur odio dolorem dignissimos nisi quis quia maxime
-        aspernatur fuga debitis, modi delectus. Natus nobis ducimus blanditiis
-        quis, accusamus eveniet!
+        {about.description}
       </AboutParagraph>
       <AboutLinks>
         <a
-          href="https://github.com/PTR-KLK/portfolio-blog-styled"
+          href={about.linkedin}
           target="_blank"
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon size="4x" icon={faLinkedin} color="#333" />
         </a>
         <a
-          href="https://github.com/PTR-KLK/portfolio-blog-styled"
+          href={about.github}
           target="_blank"
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon size="4x" icon={faGithubSquare} color="#333" />
         </a>
         <a
-          href="https://github.com/PTR-KLK/portfolio-blog-styled"
+          href={about.mail}
           target="_blank"
           rel="noopener noreferrer"
         >

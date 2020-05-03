@@ -42,6 +42,7 @@ export const ProjectSummary = styled.summary`
 export const ProjectParagraph = styled.p`
     margin: 0;
     text-align: justify;
+    width: 80%;
     padding: 0 0 1em 0;
 `;
 
