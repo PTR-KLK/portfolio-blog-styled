@@ -18,9 +18,10 @@ export const ProjectTitle = styled.h3`
     margin: 0;
     cursor: pointer;
 
-    &:hover{
-        color: #9D9C9C;
+    @media (min-width: 1441px) {
+        cursor: default;
     }
+
 `;
 
 export const ProjectLinks = styled.nav`
@@ -37,6 +38,16 @@ export const ProjectSummary = styled.summary`
     align-items: center;
     margin: 0;
     padding: 1em 0 0 0;
+
+    @media (min-width: 769px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    @media (min-width: 1440px) {
+        display: flex;
+    }
+
 `;
 
 export const ProjectParagraph = styled.p`
@@ -44,9 +55,17 @@ export const ProjectParagraph = styled.p`
     text-align: justify;
     width: 80%;
     padding: 0 0 1em 0;
+
+    @media (min-width: 769px) {
+        width: 45%;
+    }
 `;
 
 export const ProjectImg = styled.img`
    width: 80%;
    padding: 0 0 1em 0;
+
+   @media (min-width: 769px) {
+    width: 45%;
+}
 `;

@@ -18,6 +18,15 @@ export const NavContainer = styled.nav`
         flex-direction: column;
         justify-content: center;
     }
+
+    @media (min-width: 1441px) {
+        width: 20%;
+    }
+
+    @media (min-width: 2560px) {
+        width: 30%;
+    }
+
 `;
 
 export const NavImage = styled.img`

@@ -1,6 +1,6 @@
 export const about = {
       header: "John Doe",
-      subheader: "Project #1",
+      subheader: "Some description",
       linkedin: "https://github.com/PTR-KLK/portfolio-blog-styled",
       github: "https://github.com/PTR-KLK/portfolio-blog-styled",
       mail: "https://github.com/PTR-KLK/portfolio-blog-styled",
