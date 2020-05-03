@@ -1,40 +1,38 @@
 import styled from 'styled-components';
 
-export const Author = styled.section`
-    padding: 0 2rem;
+export const AboutContainer = styled.section`
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 1em;
 `;
 
-export const Header = styled.h1`
+export const AboutHeader = styled.h1`
+    width: 100%;
     margin: 0;
-    font-size: 3.5rem;
-    line-height: 3.5rem;
-    text-transform: uppercase;
+    padding: 0 0 0.125em 0;
 `;
 
-export const Subheader = styled.h2`
+export const AboutSubheader = styled.h2`
+    width: 100%;
     margin: 0;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    padding: 0 0 0.25em 0;
 `;
 
-export const Info = styled.p`
-    font-size: 1rem;
-`;
-
-export const Links = styled.figure`
+export const AboutParagraph = styled.p`
+    width: 100%;
     margin: 0;
-    display: flex;
-    justify-content: space-between;
+    padding: 0.25em 0em;
+    text-align: justify;
+`;
 
-    @media (min-width: 376px) {
-        width: 60%;
-    }
+export const AboutLinks = styled.figure`
+    width: 100%;
+    margin: 0;
+    padding: 0.25em 0em;
 
-    @media (min-width: 769px) {
-        width: 40%;
+    & > * {
+        padding: 0 0.5em 0 0;
     }
 `;

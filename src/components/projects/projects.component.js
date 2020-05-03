@@ -1,12 +1,14 @@
 import React from "react";
-import { ProjectsContainer, Header, Subheader } from "../projects/projects.style";
+import { ProjectsContainer, ProjectsHeader, ProjectsSubheader } from "../projects/projects.style";
 import Project from "../project/project.component";
 
 function Projects() {
+
   return (
-    <ProjectsContainer id="projects">
-      <Header>Projects</Header>
-      <Subheader>Recent work</Subheader>
+    <ProjectsContainer>
+      <ProjectsHeader>Projects</ProjectsHeader>
+      <ProjectsSubheader>Recent work</ProjectsSubheader>
+      <hr style={{color: "#333"}}></hr>
       <Project />
       <Project />
       <Project />
