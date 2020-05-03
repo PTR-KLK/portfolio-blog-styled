@@ -6,6 +6,10 @@ export const AboutContainer = styled.section`
     align-content: center;
     height: 100vh;
     padding: 1em;
+
+    @media (min-width: 426px) {
+        padding: 4em;
+    }
 `;
 
 export const AboutHeader = styled.h1`
