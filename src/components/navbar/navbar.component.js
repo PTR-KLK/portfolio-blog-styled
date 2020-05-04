@@ -6,6 +6,7 @@ import {
   NavMenu,
   NavMenuItem,
   NavMenuBtn,
+  NavFooter,
 } from "./navbar.style";
 import Me from "../../resources/me.png";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -27,13 +28,35 @@ function Navbar() {
         <FontAwesomeIcon size="2x" icon={faBars} color="#fff" />
       </NavMenuBtn>
       <NavMenu isVisible={menuVisible}>
-        <NavMenuItem onClick={onVisibilityChange} to="/">
+        <NavMenuItem onClick={onVisibilityChange} to="/portfolio-blog-styled/">
           About
         </NavMenuItem>
-        <NavMenuItem onClick={onVisibilityChange} to="/projects">
+        <NavMenuItem
+          onClick={onVisibilityChange}
+          to="/portfolio-blog-styled/projects"
+        >
           Projects
         </NavMenuItem>
       </NavMenu>
+      <NavFooter>
+        <hr></hr>
+        by{" "}
+        <a
+          href="https://github.com/PTR-KLK"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          PTR-KLK
+        </a>
+        <br/>
+        <a
+          href="https://github.com/PTR-KLK/portfolio-blog-styled"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          portfolio-blog-styled
+        </a>
+      </NavFooter>
     </NavContainer>
   );
 }

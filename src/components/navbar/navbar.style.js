@@ -97,3 +97,24 @@ export const NavMenuBtn = styled.button`
         display: none;
     }
 `;
+
+export const NavFooter = styled.footer`
+    display: none;
+
+    @media (min-width: 769px) {
+        padding: 0.5em 0;
+        font-size: 0.8em;
+        display: block;
+        width: 10em;
+        text-align: center;
+
+        & a {
+            text-decoration: none;
+            color: #fff;
+
+            &:hover{
+                color: #9D9C9C;
+            }
+        }
+    }
+`;
