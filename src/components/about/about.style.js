@@ -7,7 +7,7 @@ export const AboutContainer = styled.section`
     height: 100vh;
     padding: 1em;
 
-    @media (min-width: 426px) {
+    @media (min-width: 768px) {
         padding: 4em;
     }
 `;

@@ -2,50 +2,41 @@ import styled from 'styled-components';
 
 export const ProjectContainer = styled.article`
     margin: 0;
-`;
-
-export const ProjectHeader = styled.header`
-    margin: 0;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.125em 0em;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+
 `;
 
 export const ProjectTitle = styled.h3`
     font-size: 1.5em;
     font-weight: bolder;
     margin: 0;
-    cursor: pointer;
-
-    @media (min-width: 1441px) {
-        cursor: default;
-    }
-
 `;
 
 export const ProjectLinks = styled.nav`
     margin: 0;
 
     & > * {
-        padding: 0 0 0 0.5em ;
+        margin: 0 0.25em ;
     }
 `;
 
 export const ProjectSummary = styled.summary`
-    display: ${props => props.isOpen ? "flex" : "none"};
+    display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     margin: 0;
-    padding: 1em 0 0 0;
+    padding: 0 1em;
+    order: 2;
 
-    @media (min-width: 769px) {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    @media (min-width: 1440px) {
-        display: flex;
+    @media (min-width: 768px) {
+        width: 50%;
     }
 
 `;
@@ -53,19 +44,16 @@ export const ProjectSummary = styled.summary`
 export const ProjectParagraph = styled.p`
     margin: 0;
     text-align: justify;
-    width: 80%;
-    padding: 0 0 1em 0;
-
-    @media (min-width: 769px) {
-        width: 45%;
-    }
+    padding: 1em;
 `;
 
 export const ProjectImg = styled.img`
-   width: 80%;
-   padding: 0 0 1em 0;
+   width: 100%;
+   padding: 0;
+   order: 1;
 
-   @media (min-width: 769px) {
-    width: 45%;
-}
+   @media (min-width: 768px) {
+    width: 50%;
+    order: ${props => props.invertOrder ? 3 : 1};
+    }
 `;

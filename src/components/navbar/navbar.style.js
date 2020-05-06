@@ -12,14 +12,14 @@ export const NavContainer = styled.nav`
     background-color: #333;
     color: #fff;
 
-    @media (min-width: 769px) {
+    @media (min-width: 1024px) {
         width: 30%;
         height: 100vh;
         flex-direction: column;
         justify-content: center;
     }
 
-    @media (min-width: 1441px) {
+    @media (min-width: 1440px) {
         width: 20%;
     }
 
@@ -35,7 +35,7 @@ export const NavImage = styled.img`
     border-radius: 50%;
     margin: 0 0 0 0.5em;
 
-    @media (min-width: 769px) {
+    @media (min-width: 1024px) {
         width: 10em;
         height: auto;
         margin: 0 0 1em 0;
@@ -61,7 +61,7 @@ export const NavMenu = styled.nav`
     height: 100vh;
     z-index: -1;
 
-    @media (min-width: 769px) {
+    @media (min-width: 1024px) {
         display: flex;
         position: static;
         width: auto;
@@ -79,7 +79,7 @@ export const NavMenuItem = styled(Link)`
         color: #9D9C9C;
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: 1024px) {
         display: block;
         font-size: 1.5em;
         padding: 0.25em 0;
@@ -93,7 +93,7 @@ export const NavMenuBtn = styled.button`
     border: 0;
     padding: 0;
 
-    @media (min-width: 769px) {
+    @media (min-width: 1024px) {
         display: none;
     }
 `;
@@ -101,7 +101,7 @@ export const NavMenuBtn = styled.button`
 export const NavFooter = styled.footer`
     display: none;
 
-    @media (min-width: 769px) {
+    @media (min-width: 1024px) {
         padding: 0.5em 0;
         font-size: 0.8em;
         display: block;
