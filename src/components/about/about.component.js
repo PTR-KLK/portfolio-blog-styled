@@ -5,10 +5,10 @@ import {
   AboutSubheader,
   AboutParagraph,
   AboutLinks,
+  AboutIcon,
 } from "../about/about.style";
 import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { about } from "../../resources/about";
 
 function About() {
@@ -25,21 +25,21 @@ function About() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon size="4x" icon={faLinkedin} color="#333" />
+          <AboutIcon size="4x" icon={faLinkedin} color="#333" />
         </a>
         <a
           href={about.github}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon size="4x" icon={faGithubSquare} color="#333" />
+          <AboutIcon size="4x" icon={faGithubSquare} color="#333" />
         </a>
         <a
           href={about.mail}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon size="4x" icon={faEnvelopeSquare} color="#333" />
+          <AboutIcon size="4x" icon={faEnvelopeSquare} color="#333" />
         </a>
       </AboutLinks>
     </AboutContainer>

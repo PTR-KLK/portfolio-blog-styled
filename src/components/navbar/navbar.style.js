@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
+import { colors } from '../../resources/colors';
 
 export const NavContainer = styled.nav`
     position: fixed;
@@ -9,14 +10,16 @@ export const NavContainer = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: #fff;
+    background-color: ${colors.primary};
+    color: ${colors.primaryTextLight};
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
     @media (min-width: 1024px) {
         width: 30%;
         height: 100vh;
         flex-direction: column;
         justify-content: center;
+        z-index: 2;
     }
 
     @media (min-width: 1440px) {
@@ -56,7 +59,7 @@ export const NavMenu = styled.nav`
     align-items: center;
     top: 0;
     position: fixed;
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: ${colors.primaryTransparent};
     width: 100vw;
     height: 100vh;
     z-index: -1;
@@ -71,12 +74,12 @@ export const NavMenu = styled.nav`
 
 export const NavMenuItem = styled(Link)`
     text-decoration: none;
-    color: #fff;
+    color: ${colors.primaryTextLight};
     font-size: 2em;
     padding: 0.5em 0;
 
     &:hover{
-        color: #9D9C9C;
+        color: ${colors.accent};
     }
 
     @media (min-width: 1024px) {
@@ -89,7 +92,7 @@ export const NavMenuItem = styled(Link)`
 
 export const NavMenuBtn = styled.button`
     margin: 0 0.5em 0 0;
-    background-color: #333;
+    background-color: ${colors.primary};
     border: 0;
     padding: 0;
 
@@ -110,10 +113,10 @@ export const NavFooter = styled.footer`
 
         & a {
             text-decoration: none;
-            color: #fff;
+            color: ${colors.primaryTextLight};
 
             &:hover{
-                color: #9D9C9C;
+                color: ${colors.accent};
             }
         }
     }

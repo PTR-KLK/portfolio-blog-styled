@@ -1,6 +1,8 @@
 import React from "react";
 import {
-  ProjectsContainer
+  ProjectsContainer,
+  ProjectsHeader,
+  ProjectsSubheader,
 } from "../projects/projects.style";
 import { projects } from "../../resources/projects";
 import Project from "../project/project.component";
@@ -8,6 +10,8 @@ import Project from "../project/project.component";
 function Projects() {
   return (
     <ProjectsContainer>
+      <ProjectsHeader>My portfolio</ProjectsHeader>
+      <ProjectsSubheader>Recent Work</ProjectsSubheader>
       {projects.map((e,idx) => {
         return (
           <Project

@@ -1,4 +1,12 @@
 import styled from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
+import { colors } from './resources/colors';
+
+export const GlobalStyle = createGlobalStyle`
+  body {
+    background: ${colors.primaryLight};
+  }
+`
 
 export const Main = styled.main`
     @media (min-width: 1024px) {
