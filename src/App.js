@@ -12,8 +12,8 @@ function App() {
       <Navbar />
       <Switch>
         <Main>
-          <Route exact path="/portfolio-blog-styled/projects" component={Projects} />
-          <Route exact path="/portfolio-blog-styled/" component={About} />
+          <Route exact path="/stripes-portfolio/projects" component={Projects} />
+          <Route exact path="/stripes-portfolio/" component={About} />
         </Main>
       </Switch>
     </Router>

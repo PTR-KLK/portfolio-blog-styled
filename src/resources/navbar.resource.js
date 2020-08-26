@@ -4,11 +4,11 @@ export const navbar = {
   arr: [
     {
       name: "About",
-      to: "/portfolio-blog-styled/",
+      to: "/stripes-portfolio/",
     },
     {
       name: "Projects",
-      to: "/portfolio-blog-styled/projects",
+      to: "/stripes-portfolio/projects",
     },
   ],
 };
